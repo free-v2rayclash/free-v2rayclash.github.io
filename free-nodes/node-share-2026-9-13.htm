@@ -151,34 +151,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何实现广告拦截？</h5></div>
+    <div class="panel-heading"><h5>Clash 策略组如何实现节点优先级切换？</h5></div>
     <div class="panel-body">
-        通过配置规则，将广告域名或请求路径匹配到黑名单策略，使请求直接阻断或重定向到本地地址。这样用户浏览网页或使用应用时可自动屏蔽大部分广告内容。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密在高封锁环境的优势？</h5></div>
-    <div class="panel-body">
-        AEAD 加密可防止数据篡改和流量特征泄露，降低被检测风险。在高封锁网络中，保证节点可用性和连接稳定性，同时提升数据传输安全性，确保长期安全访问。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何实现域名精确分流？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持按域名匹配流量，将不同应用流量分配到指定节点。结合策略组使用，可自动选择最优节点，提高访问速度和网络稳定性，实现精确流量管理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 能否兼容最新的 iOS 系统？</h5></div>
-    <div class="panel-body">
-        Potatso Lite 更新频率较低，在新版本 iOS 上可能出现兼容性问题。若遇到无法连接或闪退情况，建议升级至其他活跃维护的客户端如 Shadowrocket 或 Quantumult X。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用如何提高传输效率？</h5></div>
-    <div class="panel-body">
-        Hysteria2 利用 QUIC 的多路复用功能，将多个请求共享单个 UDP 连接，减少握手次数和延迟，提升整体吞吐量。尤其在高并发场景中效果显著。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 延迟检测如何提高网络稳定性？</h5></div>
-    <div class="panel-body">
-        WinXray 定期测速节点延迟，并结合策略组自动切换到延迟最低节点。这样可保证网页、视频和游戏流量稳定快速访问，减少卡顿和掉线，提高整体网络体验。<hr />    </div>
+        用户可以在 Clash 策略组中设置节点优先级，结合规则文件，自动选择延迟低、稳定性高的节点处理流量。优化网页浏览、视频播放和游戏访问速度，提高整体网络效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow 的 TUN 模式能全局代理吗？</h5></div>
@@ -186,14 +161,39 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         TUN 模式拦截系统 IP 层流量，可实现全局代理，无需手动设置浏览器或应用代理。适合需要全局科学上网或游戏加速的场景，保证所有流量均走代理节点。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的多路复用如何提高传输效率？</h5></div>
+    <div class="panel-body">
+        Hysteria2 利用 QUIC 的多路复用功能，将多个请求共享单个 UDP 连接，减少握手次数和延迟，提升整体吞吐量。尤其在高并发场景中效果显著。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 的节点排序依据是什么？</h5></div>
     <div class="panel-body">
         Nekoray 默认按节点延迟排序。用户可以自定义排序规则，如按订阅来源、名称或连接成功率排列，从而快速找到性能最佳或最常用的节点。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 策略组如何实现节点优先级切换？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何实现广告拦截？</h5></div>
     <div class="panel-body">
-        用户可以在 Clash 策略组中设置节点优先级，结合规则文件，自动选择延迟低、稳定性高的节点处理流量。优化网页浏览、视频播放和游戏访问速度，提高整体网络效率。<hr />    </div>
+        通过配置规则，将广告域名或请求路径匹配到黑名单策略，使请求直接阻断或重定向到本地地址。这样用户浏览网页或使用应用时可自动屏蔽大部分广告内容。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 能否兼容最新的 iOS 系统？</h5></div>
+    <div class="panel-body">
+        Potatso Lite 更新频率较低，在新版本 iOS 上可能出现兼容性问题。若遇到无法连接或闪退情况，建议升级至其他活跃维护的客户端如 Shadowrocket 或 Quantumult X。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 如何实现域名精确分流？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持按域名匹配流量，将不同应用流量分配到指定节点。结合策略组使用，可自动选择最优节点，提高访问速度和网络稳定性，实现精确流量管理。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess AEAD 加密在高封锁环境的优势？</h5></div>
+    <div class="panel-body">
+        AEAD 加密可防止数据篡改和流量特征泄露，降低被检测风险。在高封锁网络中，保证节点可用性和连接稳定性，同时提升数据传输安全性，确保长期安全访问。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 延迟检测如何提高网络稳定性？</h5></div>
+    <div class="panel-body">
+        WinXray 定期测速节点延迟，并结合策略组自动切换到延迟最低节点。这样可保证网页、视频和游戏流量稳定快速访问，减少卡顿和掉线，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2RayN 的作用是什么？</h5></div>
@@ -246,16 +246,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-12-clash-node.htm" title="免费Clash/V2Ray | 9月12日20M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点节点推荐">免费Clash/V2Ray | 9月12日20M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-289623.htm" title="比特币与自由之网：数字时代的隐私交易全攻略">比特币与自由之网：数字时代的隐私交易全攻略</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-286312.htm" title="梅林V2Ray效果解析：全面分析与使用指南">梅林V2Ray效果解析：全面分析与使用指南</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-10-clash-stash-node.htm" title="免费Clash/V2Ray | 9月10日22.9M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点节点推荐">免费Clash/V2Ray | 9月10日22.9M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-14-free-node-subscribe.htm" title="免费Clash/V2Ray | 9月14日20M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点节点推荐">免费Clash/V2Ray | 9月14日20M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-282986.htm" title="鸿蒙系统上安装Clash：完整教程与常见问题解答">鸿蒙系统上安装Clash：完整教程与常见问题解答</a><hr /></li>
                         <li class="py-2"><a href="/news/article-290899.htm" title="掌握网络自主权：Shadowrocket按需连接全方位解析与实战指南">掌握网络自主权：Shadowrocket按需连接全方位解析与实战指南</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-290022.htm" title="彻底攻克Shadowrocket无线网络连接难题：从故障排查到完美解决方案">彻底攻克Shadowrocket无线网络连接难题：从故障排查到完美解决方案</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-21.htm" title="免费Clash/V2Ray | 9月21日19.4M/S|免费Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点节点推荐">免费Clash/V2Ray | 9月21日19.4M/S|免费Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-290658.htm" title="小米电视用户必看：全面解析常见问题与高效解决方案">小米电视用户必看：全面解析常见问题与高效解决方案</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-284747.htm" title="安卓用户必备：2024年最佳科学上网浏览器完全指南与深度解析">安卓用户必备：2024年最佳科学上网浏览器完全指南与深度解析</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-10-clash-stash-node.htm" title="免费Clash/V2Ray | 9月10日22.9M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点节点推荐">免费Clash/V2Ray | 9月10日22.9M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点节点推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/clash-meta-github-2026-9-5.htm" title="免费Clash/V2Ray | 9月5日21.1M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点节点推荐">免费Clash/V2Ray | 9月5日21.1M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-15.htm" title="免费Clash/V2Ray | 9月15日21.6M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Trojan节点节点推荐">免费Clash/V2Ray | 9月15日21.6M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Trojan节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-282541.htm" title="全面解析云免科学上网：突破网络限制的智能解决方案">全面解析云免科学上网：突破网络限制的智能解决方案</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-285623.htm" title="突破网络封锁：AX3000梅林路由器V2Ray全流程配置指南与深度解析">突破网络封锁：AX3000梅林路由器V2Ray全流程配置指南与深度解析</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-285190.htm" title="iOS设备科学上网全攻略：解锁全球互联网的自由之门">iOS设备科学上网全攻略：解锁全球互联网的自由之门</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-290022.htm" title="彻底攻克Shadowrocket无线网络连接难题：从故障排查到完美解决方案">彻底攻克Shadowrocket无线网络连接难题：从故障排查到完美解决方案</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -267,7 +267,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">15</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
